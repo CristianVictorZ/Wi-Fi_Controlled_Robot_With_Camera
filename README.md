@@ -1,15 +1,15 @@
 # Wi-Fi Controlled Robot With Camera
 
-# Introduction
+## Introduction
 
-# Description
+## Description
 
-# Hardware Design
+## Hardware Design
 
-# Software Design
+## Software Design
 
-# Results
+## Results
 
-# Conclusions
+## Conclusions
 
-# Resources
+## Resources
