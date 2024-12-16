@@ -28,6 +28,10 @@
 | 4.7K Resistor | 2 | - | - |
 | Wires | (have yet to count them) | - | - |
 
+### 3D Model
+
+![screenshot](Media/Model3DV1.png)
+
 ## Software Design
 
 ## Results
