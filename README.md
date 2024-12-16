@@ -14,11 +14,11 @@
 
 ### Block Diagram
 
-![screenshot](Media/ShcemaBlocV2.png)
+![screenshot](Media/BlockDiagram.png)
 
 ### Electric Diagram
 
-![screenshot](Media/ShcemaElectricaV1.png)
+![screenshot](Media/ElectricDiagram.png)
 
 ### Components
 
@@ -36,7 +36,7 @@
 
 ### 3D Model
 
-![screenshot](Media/Model3DV1.png)
+![screenshot](Media/3DModel.png)
 
 ## Software Design
 
