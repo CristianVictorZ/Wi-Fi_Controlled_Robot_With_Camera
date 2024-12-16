@@ -32,7 +32,7 @@
 | Battery Support 2x 18500 | 1 | Optimus Digital | - |
 | 18500 Li-Ion Battery 3.7V 4800mAh | 2 | - | - |
 | 4.7K Resistor | 2 | - | - |
-| Wires | (have yet to count them) | - | - |
+| Wires | (have yet to count them) | Optimus Digital | - |
 
 ### 3D Model
 
