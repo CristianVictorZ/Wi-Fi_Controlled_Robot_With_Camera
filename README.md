@@ -2,6 +2,8 @@
 
 ## Introduction
 
+  The project is a spider with 4 legs controlled through Wi-Fi. It is equiped with a camera that will transmit the images it records to the app that controls it.
+
 ## Description
 
 ## Hardware Design
