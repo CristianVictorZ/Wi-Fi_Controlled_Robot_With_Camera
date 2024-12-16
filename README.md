@@ -10,6 +10,10 @@
 
 ![screenshot](Media/ShcemaBlocV2.png)
 
+### Electric Diagram
+
+![screenshot](Media/ShcemaElectricaV2.png)
+
 ## Software Design
 
 ## Results
