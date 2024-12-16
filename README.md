@@ -8,7 +8,7 @@
 
 ### Block Diagram
 
-![screenshot](Media/Shcema bloc V2.png)
+![screenshot](Wi-Fi_Controlled_Robot_With_Camera/Media/Shcema bloc V2.png)
 
 ## Software Design
 
