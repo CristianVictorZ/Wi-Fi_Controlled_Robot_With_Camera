@@ -12,7 +12,7 @@
 
 ### Electric Diagram
 
-![screenshot](Media/ShcemaElectricaV2.png)
+![screenshot](Media/ShcemaElectricaV1.png)
 
 ## Software Design
 
