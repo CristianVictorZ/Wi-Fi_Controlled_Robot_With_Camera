@@ -14,6 +14,20 @@
 
 ![screenshot](Media/ShcemaElectricaV1.png)
 
+### Components
+
+| Component | Count | Place of Aquisition | Datasheet |
+|-----------|-------|---------------------|---------- |
+| ESP32 Development Board | 1 | Optiums Digital | https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf |
+| PCA9685 Servo Driver | 1 | Optimus Digital | https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf |
+| SG90 Servo Motor | 12 | Optimus Digital | http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf |
+| OV7670 + AL422B FIFO Camera Module | 1 | Optimus Digital | https://www.haoyuelectronics.com/Attachment/OV7670%20+%20AL422B%28FIFO%29%20Camera%20Module%28V2.0%29/OV7670%20Implementation%20Guide%20%28V1.0%29.pdf|
+| Voltage Step Down Module (8A; In: 4-40V, Out: 1.25-36V) | 1 | Optimus Digital | - |
+| Battery Support 2x 18500 | 1 | Optimus Digital | - |
+| 18500 Li-Ion Battery 3.7V 4800mAh | 2 | - | - |
+| 4.7K Resistor | 2 | - | - |
+| Wires | (have yet to count them) | - | - |
+
 ## Software Design
 
 ## Results
