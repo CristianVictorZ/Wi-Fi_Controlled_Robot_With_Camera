@@ -201,7 +201,6 @@ void setup()
 
   Serial.begin(115200);
   Serial2.begin(115200, SERIAL_8N1, 16, 17);
-  while(!Serial);
 
   pinMode(VSY, INPUT);
 
@@ -233,7 +232,7 @@ void setup()
 
   server.begin();
 
-  delay(3000);
+  delay(START_DELAY);
   xTaskCreatePinnedToCore(
                     cameraHandler,
                     "TaskCamera",
