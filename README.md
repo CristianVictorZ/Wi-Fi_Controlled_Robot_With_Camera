@@ -6,8 +6,8 @@
 
 ## Description
 
-  The spider will use an ESP32 microcontroller for its access to Wi-Fi. The controller will be connected through I2C to a Servo Motor Driver and a Camera Module with a FIFO buffer. The robot will be controlled through an app to which it will transmit the images the camera records. For its power source, 2 18500 Li-ion Batteries will be used. The batteries together supply 7.4V and 4800mAh. As 7.4V is to high for the Servo Driver, a Voltage Step Down Module will be used to reduce it to 5V. A switch is placed between the Batteries and the Voltage Step Down Module to turn off the robot when not in use.
-  Each of its legs will have 3 Servo Motors: one at the base rotating on the Z axis, and two rotating on the X axis.
+  The spider will use an ESP32 microcontroller for its access to Wi-Fi. The ESP32 will be connected through I2C to a Camera Module with a FIFO buffer and through serial to another microcontroller, the ESP8266. The ESP8266 will be connected through I2C to a servo motor driver and a gyroscope. The robot will be controlled through an app to which it will transmit the images the camera records. For its power source, 2 18500 Li-ion Batteries will be used. The batteries together supply 7.4V and 4800mAh. As 7.4V is to high for the Servo Driver, a Voltage Step Down Module will be used to reduce it to 5V. A switch is placed between the Batteries and the Voltage Step Down Module to turn off the robot when not in use.
+  Each of its legs will have 2 Servo Motors: one at the base rotating on the Z axis, and one rotating on the X axis.
   The body and the legs of the robot are 3D printed.
 
 ## Hardware Design
