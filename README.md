@@ -41,9 +41,9 @@
 
 ### Implementation
 
-![screenshot](Media/Implementation1.jpg)
+![screenshot](Media/Implementation_1.jpg)
 
-![screenshot](Media/Implementation2.jpg)
+![screenshot](Media/Implementation_2.jpg)
 
 ## Software Design
 
