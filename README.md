@@ -85,7 +85,7 @@
   
 ## Results
 
-  The robot is cabable of moving, but, because of the motors used, which are rather small, it can struggle a bit. Also, the 3D printed parts are very smooth, and, as such it tends to slip. As for the camera, it can capture and send images, but is rather slow to sending them, and they can come out blurry.
+  The robot is cabable of moving, but, because of the motors used, which are rather small, it can struggle a bit. Also, the 3D printed parts are very smooth, and, as such it tends to slip. As for the camera, it can capture and send images, but is rather slow to sending them, and they can come out blurry. Maybe adding a filter for the images on the interface can help with that.
 
   ### Demo
 
