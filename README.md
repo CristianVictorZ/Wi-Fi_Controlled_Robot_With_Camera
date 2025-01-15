@@ -39,6 +39,10 @@
 
 ![screenshot](Media/3DModel.png)
 
+### Implementation
+
+
+
 ## Software Design
 
   The software of the robot can be broken into 2 parts: the control of the robot and the interface. The control can also be broken into 3 parts: the wi-fi control, the camera control and the movement control.
@@ -61,7 +65,7 @@
 
   ### Movement Control
 
-  Movement is handled by the ESP8266. It stores 4 matrices that hold the values for each of the 8 motors during a certain movement and an array for idle, that stores the default value for the motors. The 5 matrices are for: forward, backwartd, turn left, turn right. It also stores an array for error values, since the motors are not centered (my bad). It uses the Adafruit Servo Driver to interract with the PCA9685. It will check in its loop for updates to the MOVEMENT_CONTROL variable. Depending on its value it will begin one of the movements described.
+  Movement is handled by the ESP8266. It stores 4 matrices that hold the values for each of the 8 motors during a certain movement and an array for idle, that stores the default value for the motors. The 5 matrices are for: forward, backwartd, turn left, turn right. It also stores an array for error values, since the motors are not centered (my bad). It uses the Adafruit Servo Driver to interract with the PCA9685. It will check in its loop for updates to the MOVEMENT_CONTROL variable thorugh a serial port created using the Software Serial library. Depending on its value it will begin one of the movements described.
 
   ### Interface
 
@@ -71,12 +75,22 @@
 
   The second thread handles image processing. It receives from the previous thread a set of bytes through the received data stack. It the processes those bytes: it converts them from RGB565 to RGBA and stores it in an array. After receiving a set of bytes, it adds an acknowledge to the data to send stack. Once all of the bytes of an image have been read, it reshapes the array to the correct form, flips it 90 degrees (for some reason the camera just send flipped images; no clue why), converts into an image using the Pillow library and stores it on the computer. It will then change a variable to inform the interface thread to update the image.
 
-  The third thread is the one that generates the actual interface. It uses the PySimpleGUI library to generate it. The interface has its top side the image recorded by the camera, and in the bottom the controls. The controls are a series of checkboxes and radios, for: turning the camera on/off, selecting saturation, brightness and contrast of the camera, turing movement on/off, selecting the movement performed. When a value is changed, it will modify the control variables and add them to the data to send stack. At the very bottom of the interface is an exit button, that when pressed exits the interface (who would have guesses) and adds a value to the data to send stack to announce the ESP32 that the client disconnected. 
+  The third thread is the one that generates the actual interface. It uses the PySimpleGUI library to generate it. The interface has its top side the image recorded by the camera, and in the bottom the controls. The controls are a series of checkboxes and radios, for: turning the camera on/off, selecting saturation, brightness and contrast of the camera, turing movement on/off, selecting the movement performed. When a value is changed, it will modify the control variables and add them to the data to send stack. At the very bottom of the interface is an exit button, that when pressed exits the interface (who would have guesses) and adds a value to the data to send stack to announce the ESP32 that the client disconnected.
+
+  ### Other notes
+
+  Initially, both ESPs where going to be programmed in PlatformIO, but after encountering a very persistent error regarding it's flash, the ESP32 was programmed in the Arduino IDE. The Python interface was realized in Spyder.
   
 ## Results
 
-needs more leg
+  The robot is cabable of moving, but, because of the motors used, which are rather small, it can struggle a bit. Also, the 3D printed parts are very smooth, and, as such it tends to slip. As for the camera, it can capture and send images, but is rather slow to sending them, and they can come out blurry.
+
+  ### Demo
+
+  
 
 ## Conclusions
+
+  For the first time building something like this, I'm quite satisfied with it, even though it is not perfect. Going forward I would like to start fixing it's issues, starting with the camera. The image could be compressed by the ESP, and passed through a filter by the interface, thus reducing the time to send it and improving it's quality. As for the movement issues, a redesign is most likely required.
 
 ## Resources
