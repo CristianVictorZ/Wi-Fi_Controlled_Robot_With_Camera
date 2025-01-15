@@ -35,7 +35,6 @@ layout = [
                                                  sg.Checkbox("", key = '-MOVE_SELECT-'), sg.Text("Advance", key = '-MOVE_SELECT_TEXT-')],
     [sg.Checkbox("Forward", key = '-MOVE_ADVANCE-', default = True), 
     sg.Checkbox("Right", key = '-MOVE_ROTATE-')],
-    [sg.Text("Status: ", key = '-STAUS_TEXT-')],
     [sg.Button("Exit")]
 ]
 
