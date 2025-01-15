@@ -41,6 +41,24 @@
 
 ## Software Design
 
+  The software of the robot can be broken into 2 parts: the control of the robot and the interface. The control can also be broken into 3 parts: the wi-fi control, the camera control and the movement control.
+
+  ### Wi-Fi Control
+
+  Wi-Fi is handled by the Core1 on the ESP32.
+
+  ### Camera Control
+
+  The camera is handled by the Core0 on the ESP32.
+
+  ### Movement Control
+
+  Movement is handled by the ESP8266
+
+  ### Interface
+
+  The interface through which the robot is controlled has been realized in Python.
+  
 ## Results
 
 ## Conclusions
