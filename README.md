@@ -93,6 +93,10 @@
 
 ## Conclusions
 
-  For the first time building something like this, I'm quite satisfied with it.
+  For the first time building something like this, I'm quite satisfied with it. During it's creation, I have learned a lot more about the domain of robotics: about the boards and how they communicate with sensors and each other, about configuring various components, and, most importatnly, that I should probably learn some more mechanics before building something like this again, because I definitely underestimated how much the body would weigh on the legs.
 
 ## Resources
+
+  For the camera:
+  - https://www.haoyuelectronics.com/Attachment/OV7670%20+%20AL422B%28FIFO%29%20Camera%20Module%28V2.0%29/OV7670%20Implementation%20Guide%20%28V1.0%29.pdf
+  - https://www.play-zone.ch/en/fileuploader/download/download/?d=1&file=custom%2Fupload%2FFile-1402681702.pdf
