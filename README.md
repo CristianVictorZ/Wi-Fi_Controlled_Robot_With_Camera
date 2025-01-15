@@ -89,10 +89,10 @@
 
   ### Demo
 
-  
+  [<img src="https://img.youtube.com/vi/AlUA33SjM_I/maxresdefault.jpg">](https://youtu.be/AlUA33SjM_I)
 
 ## Conclusions
 
-  For the first time building something like this, I'm quite satisfied with it, even though it is not perfect. Going forward I would like to start fixing it's issues, starting with the camera. The image could be compressed by the ESP, and passed through a filter by the interface, thus reducing the time to send it and improving it's quality. As for the movement issues, a redesign is most likely required.
+  For the first time building something like this, I'm quite satisfied with it.
 
 ## Resources
