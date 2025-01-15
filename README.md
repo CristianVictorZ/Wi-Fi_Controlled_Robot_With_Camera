@@ -25,7 +25,7 @@
 | Component | Count | Place of Aquisition | Datasheet |
 |-----------|-------|---------------------|---------- |
 | ESP32 Development Board | 1 | Optiums Digital | https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf |
-| ESP8266 Development Board | 1 | Optimus Digital | [-](https://www.espressif.com/sites/default/files/documentation/esp8266-technical_reference_en.pdf) |
+| ESP8266 Development Board | 1 | Optimus Digital | https://www.espressif.com/sites/default/files/documentation/esp8266-technical_reference_en.pdf |
 | PCA9685 Servo Driver | 1 | Optimus Digital | https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf |
 | SG90 Servo Motor | 8 | Optimus Digital | http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf |
 | OV7670 + AL422B FIFO Camera Module | 1 | Optimus Digital | https://www.haoyuelectronics.com/Attachment/OV7670%20+%20AL422B%28FIFO%29%20Camera%20Module%28V2.0%29/OV7670%20Implementation%20Guide%20%28V1.0%29.pdf|
