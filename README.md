@@ -100,6 +100,10 @@
   Interface Image Capture Demo
   [<img src="https://img.youtube.com/vi/xYw6o7V557I/maxresdefault.jpg">](https://youtu.be/xYw6o7V557I)
 
+  | Real Image | Camera Taken Image |
+  | ---------- | ------------------ |
+  | ![screenshot](Media/Real_Image.jpg) | ![screenshot](Media/Camera_taken_image.png) |
+
 ## Conclusions
 
   For the first time building something like this, I'm quite satisfied with it. During it's creation, I have learned a lot more about the domain of robotics: about the boards and how they communicate with sensors and each other, about configuring various components, and, most importatnly, that I should probably learn some more mechanics before building something like this again, because I definitely underestimated how much the body would weigh on the legs.
