@@ -82,20 +82,29 @@
   ### Other notes
 
   Initially, both ESPs where going to be programmed in PlatformIO, but after encountering a very persistent error regarding it's flash, the ESP32 was programmed in the Arduino IDE. The Python interface was realized in Spyder.
+
+  The 2 boards are connected to each other through serial interface. The ESP32 uses Serial2 and the ESP8266 uses a serial interface configured with the Software Serial library.
   
 ## Results
 
-  The robot is cabable of moving, but, because of the motors used, which are rather small, it can struggle a bit. Also, the 3D printed parts are very smooth, and, as such it tends to slip. As for the camera, it can capture and send images, but is rather slow to sending them, and they can come out blurry. Maybe adding a filter for the images on the interface can help with that.
+  The robot is cabable of moving, but, because of the motors used, which are rather small, it can struggle a bit. Also, the 3D printed parts are very smooth, and, as such it tends to slip. As for the camera, it can capture and send images, but is rather slow to sending them, and they can come out blurry. Adding a filter for the images on the interface could help with that. Lastly, the 2 batteries get drained rather quickly.
 
   ### Demo
 
+  Movement Demo
   [<img src="https://img.youtube.com/vi/AlUA33SjM_I/maxresdefault.jpg">](https://youtu.be/AlUA33SjM_I)
+
+  Position Adjustment Demo
+  [<img src="https://img.youtube.com/vi/-0r1mqjBCTA/maxresdefault.jpg">](https://youtu.be/-0r1mqjBCTA)
+
+  Interface Image Capture Demo
+  [<img src="https://img.youtube.com/vi/xYw6o7V557I/maxresdefault.jpg">](https://youtu.be/xYw6o7V557I)
 
 ## Conclusions
 
   For the first time building something like this, I'm quite satisfied with it. During it's creation, I have learned a lot more about the domain of robotics: about the boards and how they communicate with sensors and each other, about configuring various components, and, most importatnly, that I should probably learn some more mechanics before building something like this again, because I definitely underestimated how much the body would weigh on the legs.
   
-  ~~This thing still haunts my nightmares.~~
+  ~~This thing haunts my nightmares.~~
 
 ## Resources
 
