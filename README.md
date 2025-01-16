@@ -67,7 +67,7 @@
 
   ### Movement Control
 
-  Movement is handled by the ESP8266. It stores 4 matrices that hold the values for each of the 8 motors during a certain movement and an array for idle, that stores the default value for the motors. The 5 matrices are for: forward, backwartd, turn left, turn right. It also stores an array for error values, since the motors are not centered (my bad). It uses the Adafruit Servo Driver to interract with the PCA9685. It will check in its loop for updates to the MOVEMENT_CONTROL variable thorugh a serial port created using the Software Serial library. Depending on its value it will begin one of the movements described.
+  Movement is handled by the ESP8266. It stores 4 matrices that hold the values for each of the 8 motors during a certain movement and an array for idle, that stores the default value for the motors. The 5 matrices are for: forward, backwartd, turn left, turn right. It also stores an array for error values, since the motors are not centered (my bad). It uses the Adafruit Servo Driver to interract with the PCA9685. It will check in its loop for updates to the MOVEMENT_CONTROL variable thorugh a serial port created using the Software Serial library. Depending on its value it will begin one of the movements described. The ESP8266 is also connected to a MPU6050 Accelerometer used to determine the tilt of the body. Based on this, if configured to do so from the interface, it can calculate the error of the servomotrs, and, using a pid, adjust itself so that the body is parallel to the ground.
 
   ### Interface
 
