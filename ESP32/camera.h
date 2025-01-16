@@ -153,13 +153,16 @@ void cameraInit()
   write_i2c(OV7670_ADDR, COM7, 0b100);
   write_i2c(OV7670_ADDR, COM15, 0b11010000);
 
-  frameControl(196, 52, 8, 488);//???
+  frameControl(196, 52, 8, 488);
+  //The logical value for hStart and hStop would be 16 and 656 (or any other 2 values with a difference of 640), but this would result in a broken image.
+  //Not sure why 196 and 52 are the values that work.
     
   write_i2c(OV7670_ADDR, REG_MVFP, 0x2b);
 
   cameraSetResolution(0);
   
-  write_i2c(OV7670_ADDR, 0xb0, 0x84);//???
+  write_i2c(OV7670_ADDR, 0xb0, 0x84);
+  //0xb0 is supposed to be a reserved register, but removing this instruction results in a broken image; not sure why.
   
   cameraSetSaturation(0);
 
