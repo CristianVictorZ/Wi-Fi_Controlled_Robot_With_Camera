@@ -153,18 +153,18 @@ void cameraInit()
   write_i2c(OV7670_ADDR, COM7, 0b100);
   write_i2c(OV7670_ADDR, COM15, 0b11010000);
 
-  frameControl(196, 52, 8, 488);
+  frameControl(196, 52, 8, 488);//???
     
   write_i2c(OV7670_ADDR, REG_MVFP, 0x2b);
 
   cameraSetResolution(0);
   
-  write_i2c(OV7670_ADDR, 0xb0, 0x84);// no clue what this is but it's most important for colors
+  write_i2c(OV7670_ADDR, 0xb0, 0x84);//???
   
   cameraSetSaturation(0);
 
-  write_i2c(OV7670_ADDR, COM8, 0xe7); //AWB on
-  write_i2c(OV7670_ADDR, AWBCTR0, 0x9f); // Simple AWB
+  write_i2c(OV7670_ADDR, COM8, 0xe7);
+  write_i2c(OV7670_ADDR, AWBCTR0, 0x9f);
 }
 
 #endif
